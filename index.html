@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="google.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul style="padding-right: 20px;cursor: pointer;">
+                <li class="hover">Gmail</li>
+                <li class="hover">Images</li>
+                <li><img src="more.jpg" onclick="showhide()" id="menu" alt=""
+                        style="width: 20px;height: 20px; font-family: sans-serif"></li>
+                <li><span style="background-color: #4182F6;padding: 4px 10px;border-radius: 2px;">Sign in</span></li>
+            </ul>
+        </div>
+        <div class="img">
+            <img src="googlelogo_light_color_272x92dp.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text">
+            <a class="icon"><i class='bx bx-search'></i></a>
+            <div class="cam">
+                <i class='bx bxs-camera'></i>
+            </div>
+            <div class="mic">
+                <i class='bx bx-microphone'></i>
+            </div>
+            <div class="links">
+                <a href="">Google Search</a>
+                <a href="">I'm Feeling Lucky</a>
+            </div>
+            <a class="a" href="">Google offered in: &nbsp; <span style="color: #8AB4F8;">اردو پښتو سنڌي</span></a>
+        </div>
+        <div class="footer">
+
+            <h3>Pakistan</h3>
+            <hr style="border-bottom: 1px solid grey;position: absolute;top: 40px;left:0px;width: 100%;">
+            <div class="ul">
+                <ul>
+                    <li>About</li>
+                    <li>Advertising</li>
+                    <li>Business</li>
+                    <li>How Search Works</li>
+                </ul>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="more" id="more">
+            <div class="row">
+                <div><img src="account.jpg" alt=""></div>
+                <div><img src="search.jpg" alt=""></div>
+                <div><img src="bisiness.jpg" alt=""></div>
+            </div>
+            <div class="row">
+                <div><img src="maps.jpg" alt=""></div>
+                <div><img src="youtube.jpg" alt=""></div>
+                <div><img src="play.jpg" alt=""></div>
+            </div>
+            <div class="row">
+                <div><img src="news.jpg" alt=""></div>
+                <div><img src="gmail.jpg" alt=""></div>
+                <div><img src="meet.jpg" alt=""></div>
+            </div>
+            <div class="row">
+                <div><img src="chat.jpg" alt=""></div>
+                <div><img src="contact.jpg" alt=""></div>
+                <div><img src="drive.jpg" alt=""></div>
+            </div>
+            <div class="row">
+                <div><img src="maps.jpg" alt=""></div>
+                <div><img src="search.jpg" alt=""></div>
+                <div><img src="drive.jpg" alt=""></div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        const more = document.getElementById('more');
+        const menu = document.getElementById('menu');
+        let isClicked = true;
+        let showhide = function () {
+            if (isClicked) {
+                more.style.display = 'block';
+                isClicked = false;
+            } else {
+                more.style.display = 'none';
+                isClicked = true;
+            }
+        }
+
+
+
+
+
+        // -----------------------------------------------------
+
+
+
+
+
+    </script>
+</body>
+
+</html>
